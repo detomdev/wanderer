@@ -3,22 +3,132 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<title>Wanderer</title>
 	</head>
 	<body>
+		<header class="header container container--nav">
+			<nav class="main__nav flex">
+				<a class="comp--logo" href="index.html">Wanderer</a>
+				<ul class="primary__nav flex">
+					<li>Destinations</li>
+					<li>Planning</li>
+					<li>Accomodations</li>
+					<li>Experiences</li>
+					<li>Search</li>
+				</ul>
+				<ul class="secondary__nav flex">
+					<li>Login</li>
+					<li>Contact Us</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="carousel">
+					<div class="carousel-inner flex">
+						<div class="carousel-item active item1">
+							<div class="carousel-item-overlay">
+								<span>Zurich, <em>Switzerland</em></span>
+								<h1>Hurry!<br />Get the best villa for you</h1>
+							</div>
+						</div>
+						<div class="carousel-item item2">
+							<div class="carousel-item-overlay">
+								<span>Venice, <em>Italy</em></span>
+								<h1>Be Quick!<br />Get the best villa in town</h1>
+							</div>
+						</div>
+						<div class="carousel-item item3">
+							<div class="carousel-item-overlay">
+								<span>Punta Cana, <em>Dominican Republic</em></span>
+								<h1>Act Now!<br />Get the highest level penthouse</h1>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button">
+						<img src="images/left-arrow.svg" alt="" />
+					</button>
+					<button class="carousel-control-next" type="button">
+						<img src="images/right-arrow.svg" alt="" />
+					</button>
+					<div class="carousel-indicators">
+						<button type="button" data-slide-to="0" class="active"></button>
+						<button type="button" data-slide-to="1"></button>
+						<button type="button" data-slide-to="2"></button>
+						<!-- Add more indicators as needed -->
+					</div>
+				</div>
+			</section>
+			<section class="Examples">
+				<p><span>Plan your trip</span> Where will you wander next?</p>
+				<a>View all destinations</a>
+				<div>Example 1</div>
+				<div>Example 2</div>
+				<div>Example 3</div>
+			</section>
+			<section class="testimonial">
+				<div>testimonial 1</div>
+				<div>testimonial 2</div>
+				<div>testimonial 3</div>
+			</section>
+			<section class="destinations">
+				<div>Destination 1</div>
+				<div>Destination 2</div>
+				<div>Destination 3</div>
+				<div>Destination 4</div>
+				<div>Destination 5</div>
+				<div>Destination 6</div>
+			</section>
+			<section class="services">
+				<i class="fa-solid fa-plane"></i>
+				<p>Ticketing</p>
+				<i class="fa-solid fa-ship"></i>
+				<p>Cruises</p>
+				<i class="fa-solid fa-map-location"></i>
+				<p>Tours</p>
+				<i class="fa-solid fa-hotel"></i>
+				<p>Accomodations</p>
+				<i class="fa-solid fa-sailboat"></i>
+				<p>Beaches</p>
+				<i class="fa-solid fa-person-skiing"></i>
+				<p>Winter sports</p>
+			</section>
+			<section class="blog">
+				<div>article 1</div>
+				<div>article 2</div>
+			</section>
+			<section class="book">
+				<p>Want to wander with us?</p>
+				<a>Book Now</a>
+			</section>
+			<section class="footer container">
+				<a class="comp--logo-footer" href="index.html">Wanderer</a>
+				<p>About Wanderers</p>
+				<p>blahblahblah</p>
+				<ul class="flex">
+					<li>Home</li>
+					<li>Destinations</li>
+					<li>Services</li>
+					<li>About Us</li>
+					<li>Privacy Policy</li>
+					<li>Contact Us</li>
+					<li>Terms and Conditions</li>
+				</ul>
+				<p>Sign up</p>
+				<p>Description</p>
+				<p>Email sign up here</p>
+			</section>
+		</main>
 		<script src="script.js"></script>
 	</body>
 </html>
-<i class="fa-solid fa-plane"></i>
-<i class="fa-solid fa-ship"></i>
-<i class="fa-solid fa-map-location"></i>
-<i class="fa-solid fa-hotel"></i>
-<i class="fa-solid fa-person-skiing"></i>
-<i class="fa-solid fa-sailboat"></i>
