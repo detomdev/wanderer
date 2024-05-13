@@ -274,6 +274,18 @@ h2 {
 	z-index: 3;
 }
 /* Footer Section */
+.footer {
+	flex-direction: column;
+	text-align: center;
+}
+
+.nav__footer,
+.nav__footer-secondary {
+	flex-direction: column;
+	padding: 0;
+	margin: 1em 0;
+	line-height: 2;
+}
 
 @media (min-width: 700px) {
 	.container__examples {
