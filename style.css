@@ -192,7 +192,7 @@ h2 {
 
 /* Button style */
 .btn__general {
-	display: inline-block;
+	display: block;
 	cursor: pointer;
 	width: 12rem;
 	padding: 0.6em 1rem;
@@ -281,6 +281,7 @@ h2 {
 }
 
 .carousel-item-overlay .btn__hero {
+	display: inline-block;
 	cursor: pointer;
 	width: 12rem;
 	background: var(--clr-fire-engine-red);
@@ -450,12 +451,22 @@ h2 {
 /* Services section */
 .container__services {
 	flex-direction: column;
-	padding: 2em;
 }
 
 .card__services {
-	border: 1px solid red;
 	align-items: flex-start;
+	margin-top: 4rem;
+}
+
+.services h2 {
+	padding-bottom: 0;
+}
+
+.services span {
+	text-transform: uppercase;
+	color: var(--clr-orange-wheel);
+	margin-bottom: 2rem;
+	font-size: var(--fs-500);
 }
 
 .services .card__services span {
@@ -466,17 +477,21 @@ h2 {
 	letter-spacing: 1px;
 }
 
-.services span {
-	text-transform: uppercase;
-	color: var(--clr-orange-wheel);
-	margin-bottom: 1rem;
-	font-size: var(--fs-500);
+.card__services .btn__general {
+	margin-top: 1em;
+	font-size: var(--fs-400);
+	background-color: var(--clr-orange-wheel);
+}
+
+.services .card__services p {
+	display: block;
 }
 
 .services .card__services i {
 	line-height: 1;
 	font-size: var(--fs-800);
 	margin-right: 2rem;
+	color: var(--clr-orange-wheel);
 }
 .services .card__services {
 	margin-bottom: 2em;
