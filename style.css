@@ -396,6 +396,12 @@ h3 {
 	background-color: white;
 }
 
+.container__testimonials {
+	flex-direction: column;
+	width: 100%;
+	gap: 2em;
+	text-align: center;
+}
 /* Destination Section */
 .destinations {
 	background-color: rgba(0, 48, 73, 0.1);
