@@ -169,7 +169,7 @@ h1 {
 
 h2 {
 	font-size: var(--fs-800);
-	font-weight: 800;
+	font-weight: 400;
 	font-family: var(--ff-sans-display);
 	line-height: 1;
 	padding-bottom: 2rem;
@@ -206,6 +206,7 @@ h3 {
 .btn__general {
 	display: block;
 	cursor: pointer;
+	max-width: 12rem;
 	width: 12rem;
 	padding: 0.6em 1rem;
 	border-radius: 2rem;
@@ -405,7 +406,7 @@ h3 {
 /* Destination Section */
 .destinations {
 	background-color: rgba(0, 48, 73, 0.1);
-	margin-bottom: 4em;
+	margin-bottom: 0;
 }
 
 .container__destinations {
@@ -428,7 +429,7 @@ h3 {
 .destinations .card::after {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: 290px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -448,6 +449,11 @@ h3 {
 	position: absolute;
 	font-size: var(--fs-500);
 	z-index: 3;
+	transition: font-size 0.5s ease-in-out;
+}
+
+.card--price:hover {
+	font-size: var(--fs-600);
 }
 
 .card--city {
@@ -458,6 +464,7 @@ h3 {
 	position: absolute;
 	font-size: var(--fs-500);
 	z-index: 3;
+	transition: font-size 0.5s ease-in-out;
 }
 /* Services section */
 .container__services {
@@ -507,6 +514,19 @@ h3 {
 .services .card__services {
 	margin-bottom: 2em;
 }
+/* Book section */
+.book {
+	text-align: center;
+}
+
+.book .btn__general {
+	display: inline-block;
+	cursor: pointer;
+	width: 12rem;
+	background: var(--clr-fire-engine-red);
+	font-size: var(--fs-400);
+	text-transform: uppercase;
+}
 
 /* Footer Section */
 .footer {
@@ -550,10 +570,17 @@ h3 {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 2em;
+		padding: 2rem;
 	}
 
 	.card__services {
 		max-width: 30%;
+	}
+
+	.card_services,
+	p,
+	.btn__general {
+		width: 100%;
 	}
 
 	/* Footer */
